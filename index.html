@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container border bg-secondary w-25">
+        <!-- <h1>CASIO</h1> -->
+        <form action="">
+            <input id="result" type="text" class="form-control">
+        </form>
+    </div>
+    <div class="container border bg-light w-25">
+         <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+            <button type="button"  button onclick="displayNum(1)" class="btn btn-outline-dark" >1</button>
+            <button type="button"  button onclick="displayNum(2)" class="btn btn-outline-dark" >2</button>
+            <button type="button"  button onclick="displayNum(3)" class="btn btn-outline-dark" >3</button>
+            <button type="button"  button onclick="displayNum('/')" class="btn btn-outline-dark" >/</button>
+         </div>
+<br>
+         <div class="btn-group btn-group-lg " role="group" aria-label="Large button group">
+           <button type="button"  button onclick="displayNum(4)" class="btn btn-outline-dark" >4</button>
+           <button type="button"  button onclick="displayNum(5)" class="btn btn-outline-dark" >5</button>
+           <button type="button"  button onclick="displayNum(6)" class="btn btn-outline-dark" >6</button>
+           <button type="button"  button onclick="displayNum('*')" class="btn btn-outline-dark" >*</button>
+         </div>
+<br>
+         <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+          <button type="button" button onclick="displayNum(7)"class="btn btn-outline-dark" >7</button>
+          <button type="button" button onclick="displayNum(8)" class="btn btn-outline-dark" >8</button>
+          <button type="button" button onclick="displayNum(9)" class="btn btn-outline-dark" >9</button>
+          <button type="button" button onclick="displayNum('+')" class="btn btn-outline-dark" >+</button>
+         </div>
+<br>
+         <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+         <button type="button" button onclick="allClear()"class="btn btn-outline-dark">AC</button>
+         <button type="button" button onclick="backSpace()" class="btn btn-outline-dark">&#9003</button>
+         <button type="button" button onclick="displayNum('%')" class="btn btn-outline-dark">%</button>
+         <button type="button" button onclick="displayNum('-')" class="btn btn-outline-dark" >-</button>
+         </div>
+<br>
+         <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+        <button type="button" button onclick="displayNum(0)" class="btn btn-outline-dark" value="0">0</button>
+        <button type="button" button onclick="displayNum('.')" class="btn btn-outline-dark" value="Point">.</button>
+        <button type="button" button onclick="evalExpr()" class="btn btn-outline-dark" value="Equal">=</button>
+       
+        </div>
+        <br> 
+    </div>
+</body>
+<script src="./calc.js"></script>
+</html>
+
+
+
+<!-- expr="5*2/2" -->
+<!-- '5*2/2' -->
+<!-- eval(expr) -->
+<!-- 5 -->
